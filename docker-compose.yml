@@ -1,0 +1,9 @@
+version: '2.1'
+services:
+  wiremock:
+    build: ./wiremock
+    command: --port 7070
+    ports: 
+      - "7070:7070"
+    volumes:
+      - ./wiremock/stubs:/home/wiremock
