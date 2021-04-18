@@ -1,2 +1,3 @@
 FROM rodolpheche/wiremock
-COPY stubs /home/wiremock
+
+# COPY stubs /home/wiremock

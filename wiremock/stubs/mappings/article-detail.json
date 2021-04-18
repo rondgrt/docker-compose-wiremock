@@ -1,11 +1,11 @@
 {
 	"request": {
 		"method": "GET",
-		"urlPathPattern": "/v1/resource/([a-zA-Z0-9-\\_]*)"
+		"urlPathPattern": "/article/([a-zA-Z0-9]*)"
 	},
 	"response": {
 		"status": 200,
-		"bodyFileName": "response.json",
+		"bodyFileName": "article-detail-response.json",
 		"headers": {
 			"Content-Type": "application/json"
 		}

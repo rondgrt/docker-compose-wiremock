@@ -1,11 +1,11 @@
 {
 	"request": {
 		"method": "GET",
-		"urlPathPattern": "/v1/resource/([a-zA-Z0-9-\\_]*)"
+		"urlPathPattern": "/test/([a-zA-Z0-9]*)"
 	},
 	"response": {
 		"status": 200,
-		"bodyFileName": "response.json",
+		"bodyFileName": "response-copy.json",
 		"headers": {
 			"Content-Type": "application/json"
 		}

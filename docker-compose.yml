@@ -1,9 +1,11 @@
-version: '2.1'
+version: '3'
+
 services:
-  wiremock:
-    build: ./wiremock
-    command: --port 7070
-    ports: 
-      - "7070:7070"
-    volumes:
-      - ./wiremock/stubs:/home/wiremock
+    wiremock:
+        container_name: local-wiremock
+        build: ./wiremock
+        command: --port 7070
+        ports:
+            - '7070:7070'
+        volumes:
+            - ./wiremock/stubs:/home/wiremock
