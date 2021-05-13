@@ -3,9 +3,9 @@ version: '3'
 services:
     wiremock:
         container_name: local-wiremock
-        build: ./wiremock
-        command: --port 7070
+        build: .
+        command: --port 7070 --extensions WiremockProxyTransformer
         ports:
             - '7070:7070'
         volumes:
-            - ./wiremock/stubs:/home/wiremock
+            - ./stubs:/home/wiremock

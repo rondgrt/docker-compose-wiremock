@@ -1,0 +1,14 @@
+{
+	"priority": 10,
+	"request": {
+		"urlPathPattern": "/gorest/.*",
+		"method": "GET"
+	},
+	"response": {
+		"proxyBaseUrl": "https://gorest.co.in/",
+		"transformers": ["my-proxy"],
+		"transformerParameters": {
+			"urlPrefixToRemove": "/gorest"
+		}
+	}
+}

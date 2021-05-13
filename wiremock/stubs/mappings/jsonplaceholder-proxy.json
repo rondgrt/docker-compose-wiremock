@@ -1,0 +1,14 @@
+{
+	"priority": 10,
+	"request": {
+		"urlPathPattern": "/jsonplaceholder/.*",
+		"method": "GET"
+	},
+	"response": {
+		"proxyBaseUrl": "https://jsonplaceholder.typicode.com",
+		"transformers": ["my-proxy"],
+		"transformerParameters": {
+			"urlPrefixToRemove": "/jsonplaceholder"
+		}
+	}
+}
